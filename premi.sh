@@ -1,7 +1,5 @@
 #!/bin/bash
 ### Color
-apt upgrade -y
-apt update -y
 apt install lolcat -y
 apt install wondershaper -y
 Green="\e[92;1m"
@@ -209,7 +207,6 @@ function first_setup(){
     print_success "Directory Xray"
     if [[ $(cat /etc/os-release | grep -w ID | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/ID//g') == "ubuntu" ]]; then
     echo "Setup Dependencies $(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')"
-    sudo apt update -y
     apt-get install --no-install-recommends software-properties-common
     add-apt-repository ppa:vbernat/haproxy-2.0 -y
     apt-get -y install haproxy=2.0.\*
@@ -252,9 +249,6 @@ function base_package() {
     print_install "Menginstall Packet Yang Dibutuhkan"
     apt install zip pwgen openssl netcat socat cron bash-completion -y
     apt install figlet -y
-    apt update -y
-    apt upgrade -y
-    apt dist-upgrade -y
     systemctl enable chronyd
     systemctl restart chronyd
     systemctl enable chrony
