@@ -42,7 +42,6 @@
             "clients": [
                {
                  "id": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0"
-#vless
              }
           ]
        },
@@ -62,7 +61,6 @@
                {
                  "id": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0",
                  "alterId": 0
-#vmess
              }
           ]
        },
@@ -82,7 +80,6 @@
            "clients": [
               {
                  "password": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0"
-#trojanws
               }
           ],
          "udp": true
@@ -103,7 +100,6 @@
            {
            "method": "aes-128-gcm",
           "password": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0"
-#ssws
            }
           ],
           "network": "tcp,udp"
@@ -124,7 +120,7 @@
            "clients": [
              {
                "id": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0"
-#vlessgrpc
+
              }
           ]
        },
@@ -144,7 +140,6 @@
                {
                  "id": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0",
                  "alterId": 0
-#vmessgrpc
              }
           ]
        },
@@ -164,7 +159,6 @@
              "clients": [
                {
                  "password": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0"
-#trojangrpc
                }
            ]
         },
@@ -184,7 +178,6 @@
           {
              "method": "aes-128-gcm",
              "password": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0"
-#ssgrpc 
            }
          ],
            "network": "tcp,udp"
